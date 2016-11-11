@@ -13,7 +13,9 @@
 		27D3E49319470DB5001A3637 /* JRTNullStrippingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D3E49219470DB5001A3637 /* JRTNullStrippingTest.m */; };
 		27D3E49719470DE0001A3637 /* NSJSONSerialization+RemovingNulls.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D3E49619470DE0001A3637 /* NSJSONSerialization+RemovingNulls.m */; };
 		27D3E49819470DE0001A3637 /* NSJSONSerialization+RemovingNulls.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D3E49619470DE0001A3637 /* NSJSONSerialization+RemovingNulls.m */; };
-		EE4D87DA1DD61453002F9BD3 /* NSNullRemoval.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4D87D91DD61453002F9BD3 /* NSNullRemoval.h */; };
+		EE02F8FD1DD628A4001AD87A /* NSJSONSerialization+RemovingNulls.h in Headers */ = {isa = PBXBuildFile; fileRef = 27D3E49519470DE0001A3637 /* NSJSONSerialization+RemovingNulls.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE02F8FE1DD628B0001AD87A /* NSJSONSerialization+RemovingNulls.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D3E49619470DE0001A3637 /* NSJSONSerialization+RemovingNulls.m */; };
+		EE4D87DA1DD61453002F9BD3 /* NSNullRemoval.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4D87D91DD61453002F9BD3 /* NSNullRemoval.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE4D87DA1DD61453002F9BD3 /* NSNullRemoval.h in Headers */,
+				EE02F8FD1DD628A4001AD87A /* NSJSONSerialization+RemovingNulls.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE02F8FE1DD628B0001AD87A /* NSJSONSerialization+RemovingNulls.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
