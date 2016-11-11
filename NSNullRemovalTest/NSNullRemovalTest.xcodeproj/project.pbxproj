@@ -13,6 +13,7 @@
 		27D3E49319470DB5001A3637 /* JRTNullStrippingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D3E49219470DB5001A3637 /* JRTNullStrippingTest.m */; };
 		27D3E49719470DE0001A3637 /* NSJSONSerialization+RemovingNulls.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D3E49619470DE0001A3637 /* NSJSONSerialization+RemovingNulls.m */; };
 		27D3E49819470DE0001A3637 /* NSJSONSerialization+RemovingNulls.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D3E49619470DE0001A3637 /* NSJSONSerialization+RemovingNulls.m */; };
+		EE4D87D41DD60C84002F9BD3 /* NSJSONSerialization+RemovingNulls iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4D87D21DD60C84002F9BD3 /* NSJSONSerialization+RemovingNulls iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,9 @@
 		27D3E49219470DB5001A3637 /* JRTNullStrippingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JRTNullStrippingTest.m; path = ../../Tests/JRTNullStrippingTest.m; sourceTree = "<group>"; };
 		27D3E49519470DE0001A3637 /* NSJSONSerialization+RemovingNulls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSJSONSerialization+RemovingNulls.h"; sourceTree = "<group>"; };
 		27D3E49619470DE0001A3637 /* NSJSONSerialization+RemovingNulls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSJSONSerialization+RemovingNulls.m"; sourceTree = "<group>"; };
+		EE4D87D01DD60C84002F9BD3 /* NSJSONSerialization+RemovingNulls iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "NSJSONSerialization+RemovingNulls iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE4D87D21DD60C84002F9BD3 /* NSJSONSerialization+RemovingNulls iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSJSONSerialization+RemovingNulls iOS.h"; sourceTree = "<group>"; };
+		EE4D87D31DD60C84002F9BD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EE4D87CC1DD60C84002F9BD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -64,6 +75,7 @@
 				27D3E49419470DE0001A3637 /* Source */,
 				27D3E47119470CF6001A3637 /* NSNullRemovalTest */,
 				27D3E48419470D7E001A3637 /* Tests */,
+				EE4D87D11DD60C84002F9BD3 /* NSJSONSerialization+RemovingNulls iOS */,
 				27D3E46E19470CF6001A3637 /* Frameworks */,
 				27D3E46D19470CF6001A3637 /* Products */,
 			);
@@ -74,6 +86,7 @@
 			children = (
 				27D3E46C19470CF6001A3637 /* NSNullRemovalTest */,
 				27D3E48119470D7E001A3637 /* Tests.xctest */,
+				EE4D87D01DD60C84002F9BD3 /* NSJSONSerialization+RemovingNulls iOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,7 +144,27 @@
 			path = ../Source;
 			sourceTree = "<group>";
 		};
+		EE4D87D11DD60C84002F9BD3 /* NSJSONSerialization+RemovingNulls iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EE4D87D21DD60C84002F9BD3 /* NSJSONSerialization+RemovingNulls iOS.h */,
+				EE4D87D31DD60C84002F9BD3 /* Info.plist */,
+			);
+			path = "NSJSONSerialization+RemovingNulls iOS";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EE4D87CD1DD60C84002F9BD3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE4D87D41DD60C84002F9BD3 /* NSJSONSerialization+RemovingNulls iOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		27D3E46B19470CF6001A3637 /* NSNullRemovalTest */ = {
@@ -168,17 +201,39 @@
 			productReference = 27D3E48119470D7E001A3637 /* Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		EE4D87CF1DD60C84002F9BD3 /* NSJSONSerialization+RemovingNulls iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE4D87D71DD60C84002F9BD3 /* Build configuration list for PBXNativeTarget "NSJSONSerialization+RemovingNulls iOS" */;
+			buildPhases = (
+				EE4D87CB1DD60C84002F9BD3 /* Sources */,
+				EE4D87CC1DD60C84002F9BD3 /* Frameworks */,
+				EE4D87CD1DD60C84002F9BD3 /* Headers */,
+				EE4D87CE1DD60C84002F9BD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NSJSONSerialization+RemovingNulls iOS";
+			productName = "NSJSONSerialization+RemovingNulls iOS";
+			productReference = EE4D87D01DD60C84002F9BD3 /* NSJSONSerialization+RemovingNulls iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		27D3E46419470CF6001A3637 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Vertical Turtle";
 				TargetAttributes = {
 					27D3E48019470D7E001A3637 = {
 						TestTargetID = 27D3E46B19470CF6001A3637;
+					};
+					EE4D87CF1DD60C84002F9BD3 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -196,12 +251,20 @@
 			targets = (
 				27D3E46B19470CF6001A3637 /* NSNullRemovalTest */,
 				27D3E48019470D7E001A3637 /* Tests */,
+				EE4D87CF1DD60C84002F9BD3 /* NSJSONSerialization+RemovingNulls iOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		27D3E47F19470D7E001A3637 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE4D87CE1DD60C84002F9BD3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -229,6 +292,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EE4D87CB1DD60C84002F9BD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -253,13 +323,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -291,14 +367,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -360,6 +441,83 @@
 			};
 			name = Release;
 		};
+		EE4D87D51DD60C84002F9BD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "NSJSONSerialization+RemovingNulls iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.itechart.NSJSONSerialization-RemovingNulls-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EE4D87D61DD60C84002F9BD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "NSJSONSerialization+RemovingNulls iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.itechart.NSJSONSerialization-RemovingNulls-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -379,12 +537,22 @@
 				27D3E47C19470CF6001A3637 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27D3E48F19470D7E001A3637 /* Build configuration list for PBXNativeTarget "Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				27D3E49019470D7E001A3637 /* Debug */,
 				27D3E49119470D7E001A3637 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE4D87D71DD60C84002F9BD3 /* Build configuration list for PBXNativeTarget "NSJSONSerialization+RemovingNulls iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE4D87D51DD60C84002F9BD3 /* Debug */,
+				EE4D87D61DD60C84002F9BD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

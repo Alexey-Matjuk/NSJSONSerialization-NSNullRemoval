@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0510"
+   LastUpgradeVersion = "0810"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,77 +14,61 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "27D3E46B19470CF6001A3637"
-               BuildableName = "NSNullRemovalTest"
-               BlueprintName = "NSNullRemovalTest"
+               BlueprintIdentifier = "EE4D87CF1DD60C84002F9BD3"
+               BuildableName = "NSJSONSerialization+RemovingNulls iOS.framework"
+               BlueprintName = "NSJSONSerialization+RemovingNulls iOS"
                ReferencedContainer = "container:NSNullRemovalTest.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      buildConfiguration = "Debug">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "27D3E48019470D7E001A3637"
-               BuildableName = "Tests.xctest"
-               BlueprintName = "Tests"
-               ReferencedContainer = "container:NSNullRemovalTest.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "27D3E46B19470CF6001A3637"
-            BuildableName = "NSNullRemovalTest"
-            BlueprintName = "NSNullRemovalTest"
-            ReferencedContainer = "container:NSNullRemovalTest.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
    </TestAction>
    <LaunchAction
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "27D3E46B19470CF6001A3637"
-            BuildableName = "NSNullRemovalTest"
-            BlueprintName = "NSNullRemovalTest"
+            BlueprintIdentifier = "EE4D87CF1DD60C84002F9BD3"
+            BuildableName = "NSJSONSerialization+RemovingNulls iOS.framework"
+            BlueprintName = "NSJSONSerialization+RemovingNulls iOS"
             ReferencedContainer = "container:NSNullRemovalTest.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
+      buildConfiguration = "Release"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "27D3E46B19470CF6001A3637"
-            BuildableName = "NSNullRemovalTest"
-            BlueprintName = "NSNullRemovalTest"
+            BlueprintIdentifier = "EE4D87CF1DD60C84002F9BD3"
+            BuildableName = "NSJSONSerialization+RemovingNulls iOS.framework"
+            BlueprintName = "NSJSONSerialization+RemovingNulls iOS"
             ReferencedContainer = "container:NSNullRemovalTest.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
