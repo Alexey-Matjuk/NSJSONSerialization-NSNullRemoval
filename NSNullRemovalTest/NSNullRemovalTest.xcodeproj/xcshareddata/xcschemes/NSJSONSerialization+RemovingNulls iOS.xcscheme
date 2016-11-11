@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EE4D87CF1DD60C84002F9BD3"
-               BuildableName = "NSJSONSerialization+RemovingNulls iOS.framework"
+               BuildableName = "NSNullRemoval.framework"
                BlueprintName = "NSJSONSerialization+RemovingNulls iOS"
                ReferencedContainer = "container:NSNullRemovalTest.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EE4D87CF1DD60C84002F9BD3"
-            BuildableName = "NSJSONSerialization+RemovingNulls iOS.framework"
+            BuildableName = "NSNullRemoval.framework"
             BlueprintName = "NSJSONSerialization+RemovingNulls iOS"
             ReferencedContainer = "container:NSNullRemovalTest.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EE4D87CF1DD60C84002F9BD3"
-            BuildableName = "NSJSONSerialization+RemovingNulls iOS.framework"
+            BuildableName = "NSNullRemoval.framework"
             BlueprintName = "NSJSONSerialization+RemovingNulls iOS"
             ReferencedContainer = "container:NSNullRemovalTest.xcodeproj">
          </BuildableReference>

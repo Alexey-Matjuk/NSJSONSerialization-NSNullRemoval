@@ -13,7 +13,6 @@
 		27D3E49319470DB5001A3637 /* JRTNullStrippingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D3E49219470DB5001A3637 /* JRTNullStrippingTest.m */; };
 		27D3E49719470DE0001A3637 /* NSJSONSerialization+RemovingNulls.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D3E49619470DE0001A3637 /* NSJSONSerialization+RemovingNulls.m */; };
 		27D3E49819470DE0001A3637 /* NSJSONSerialization+RemovingNulls.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D3E49619470DE0001A3637 /* NSJSONSerialization+RemovingNulls.m */; };
-		EE4D87D41DD60C84002F9BD3 /* NSJSONSerialization+RemovingNulls iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4D87D21DD60C84002F9BD3 /* NSJSONSerialization+RemovingNulls iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE4D87DA1DD61453002F9BD3 /* NSNullRemoval.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4D87D91DD61453002F9BD3 /* NSNullRemoval.h */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +38,6 @@
 		27D3E49519470DE0001A3637 /* NSJSONSerialization+RemovingNulls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSJSONSerialization+RemovingNulls.h"; sourceTree = "<group>"; };
 		27D3E49619470DE0001A3637 /* NSJSONSerialization+RemovingNulls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSJSONSerialization+RemovingNulls.m"; sourceTree = "<group>"; };
 		EE4D87D01DD60C84002F9BD3 /* NSNullRemoval.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NSNullRemoval.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE4D87D21DD60C84002F9BD3 /* NSJSONSerialization+RemovingNulls iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSJSONSerialization+RemovingNulls iOS.h"; sourceTree = "<group>"; };
 		EE4D87D31DD60C84002F9BD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE4D87D91DD61453002F9BD3 /* NSNullRemoval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSNullRemoval.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,7 +148,6 @@
 		EE4D87D11DD60C84002F9BD3 /* NSJSONSerialization+RemovingNulls iOS */ = {
 			isa = PBXGroup;
 			children = (
-				EE4D87D21DD60C84002F9BD3 /* NSJSONSerialization+RemovingNulls iOS.h */,
 				EE4D87D31DD60C84002F9BD3 /* Info.plist */,
 			);
 			path = "NSJSONSerialization+RemovingNulls iOS";
@@ -163,7 +160,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE4D87D41DD60C84002F9BD3 /* NSJSONSerialization+RemovingNulls iOS.h in Headers */,
 				EE4D87DA1DD61453002F9BD3 /* NSNullRemoval.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
