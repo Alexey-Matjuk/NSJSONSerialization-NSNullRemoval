@@ -37,7 +37,7 @@
 		27D3E49219470DB5001A3637 /* JRTNullStrippingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JRTNullStrippingTest.m; path = ../../Tests/JRTNullStrippingTest.m; sourceTree = "<group>"; };
 		27D3E49519470DE0001A3637 /* NSJSONSerialization+RemovingNulls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSJSONSerialization+RemovingNulls.h"; sourceTree = "<group>"; };
 		27D3E49619470DE0001A3637 /* NSJSONSerialization+RemovingNulls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSJSONSerialization+RemovingNulls.m"; sourceTree = "<group>"; };
-		EE4D87D01DD60C84002F9BD3 /* NSJSONSerialization+RemovingNulls iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "NSJSONSerialization+RemovingNulls iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE4D87D01DD60C84002F9BD3 /* NSNullRemoval.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NSNullRemoval.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE4D87D21DD60C84002F9BD3 /* NSJSONSerialization+RemovingNulls iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSJSONSerialization+RemovingNulls iOS.h"; sourceTree = "<group>"; };
 		EE4D87D31DD60C84002F9BD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,7 +86,7 @@
 			children = (
 				27D3E46C19470CF6001A3637 /* NSNullRemovalTest */,
 				27D3E48119470D7E001A3637 /* Tests.xctest */,
-				EE4D87D01DD60C84002F9BD3 /* NSJSONSerialization+RemovingNulls iOS.framework */,
+				EE4D87D01DD60C84002F9BD3 /* NSNullRemoval.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -216,7 +216,7 @@
 			);
 			name = "NSJSONSerialization+RemovingNulls iOS";
 			productName = "NSJSONSerialization+RemovingNulls iOS";
-			productReference = EE4D87D01DD60C84002F9BD3 /* NSJSONSerialization+RemovingNulls iOS.framework */;
+			productReference = EE4D87D01DD60C84002F9BD3 /* NSNullRemoval.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -471,7 +471,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.itechart.NSJSONSerialization-RemovingNulls-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = NSNullRemoval;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -509,7 +509,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.itechart.NSJSONSerialization-RemovingNulls-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = NSNullRemoval;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -555,6 +555,7 @@
 				EE4D87D61DD60C84002F9BD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
