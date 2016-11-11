@@ -14,6 +14,7 @@
 		27D3E49719470DE0001A3637 /* NSJSONSerialization+RemovingNulls.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D3E49619470DE0001A3637 /* NSJSONSerialization+RemovingNulls.m */; };
 		27D3E49819470DE0001A3637 /* NSJSONSerialization+RemovingNulls.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D3E49619470DE0001A3637 /* NSJSONSerialization+RemovingNulls.m */; };
 		EE4D87D41DD60C84002F9BD3 /* NSJSONSerialization+RemovingNulls iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4D87D21DD60C84002F9BD3 /* NSJSONSerialization+RemovingNulls iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE4D87DA1DD61453002F9BD3 /* NSNullRemoval.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4D87D91DD61453002F9BD3 /* NSNullRemoval.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		EE4D87D01DD60C84002F9BD3 /* NSNullRemoval.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NSNullRemoval.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE4D87D21DD60C84002F9BD3 /* NSJSONSerialization+RemovingNulls iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSJSONSerialization+RemovingNulls iOS.h"; sourceTree = "<group>"; };
 		EE4D87D31DD60C84002F9BD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE4D87D91DD61453002F9BD3 /* NSNullRemoval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSNullRemoval.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 			children = (
 				27D3E49519470DE0001A3637 /* NSJSONSerialization+RemovingNulls.h */,
 				27D3E49619470DE0001A3637 /* NSJSONSerialization+RemovingNulls.m */,
+				EE4D87D91DD61453002F9BD3 /* NSNullRemoval.h */,
 			);
 			name = Source;
 			path = ../Source;
@@ -161,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE4D87D41DD60C84002F9BD3 /* NSJSONSerialization+RemovingNulls iOS.h in Headers */,
+				EE4D87DA1DD61453002F9BD3 /* NSNullRemoval.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
