@@ -3,10 +3,12 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface NSJSONSerialization (RemovingNulls)
 
 /// As the base class method, but pass YES to remove nulls from containers, optionally ignoring those in arrays.
-+(id)JSONObjectWithData:(NSData *)data options:(NSJSONReadingOptions)opt error:(NSError *__autoreleasing *)error removingNulls:(BOOL)removingNulls ignoreArrays:(BOOL)ignoreArrays;
++(nullable id)JSONObjectWithData:(NSData *)data options:(NSJSONReadingOptions)opt error:(NSError *__autoreleasing *)error removingNulls:(BOOL)removingNulls ignoreArrays:(BOOL)ignoreArrays;
 
 @end
 
@@ -23,3 +25,5 @@
 -(void)recursivelyRemoveNullsIgnoringArrays:(BOOL)ignoringArrays;
 
 @end
+
+NS_ASSUME_NONNULL_END

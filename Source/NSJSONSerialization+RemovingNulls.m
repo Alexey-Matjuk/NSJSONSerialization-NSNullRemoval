@@ -3,9 +3,11 @@
 
 #import "NSJSONSerialization+RemovingNulls.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @implementation NSJSONSerialization (RemovingNulls)
 
-+(id)JSONObjectWithData:(NSData *)data options:(NSJSONReadingOptions)opt error:(NSError *__autoreleasing *)error removingNulls:(BOOL)removingNulls ignoreArrays:(BOOL)ignoreArrays
++(nullable id)JSONObjectWithData:(NSData *)data options:(NSJSONReadingOptions)opt error:(NSError *__autoreleasing *)error removingNulls:(BOOL)removingNulls ignoreArrays:(BOOL)ignoreArrays
 {
     // Mutable containers are required to remove nulls.
     if (removingNulls)
@@ -14,7 +16,7 @@
         opt = opt | NSJSONReadingMutableContainers;
     }
     
-    id JSONObject = [self JSONObjectWithData:data options:opt error:error];
+    _Nullable id JSONObject = [self JSONObjectWithData:data options:opt error:error];
     
     if ((error && *error) || !removingNulls)
     {
@@ -45,23 +47,22 @@
     NSMutableArray *nullKeys = [NSMutableArray array];
     NSMutableArray *arrayKeys = [NSMutableArray array];
     NSMutableArray *dictionaryKeys = [NSMutableArray array];
-    
-    [self enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop)
-     {
-         if (obj ==[NSNull null])
-         {
-             [nullKeys addObject:key];
-         }
-         else if ([obj isKindOfClass:[NSDictionary  class]])
-         {
-             [dictionaryKeys addObject:key];
-         }
-         else if ([obj isKindOfClass:[NSArray class]])
-         {
-             [arrayKeys addObject:key];
-         }
-     }];
-    
+
+    [self enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+        if (obj ==[NSNull null])
+        {
+            [nullKeys addObject:key];
+        }
+        else if ([obj isKindOfClass:[NSDictionary  class]])
+        {
+            [dictionaryKeys addObject:key];
+        }
+        else if ([obj isKindOfClass:[NSArray class]])
+        {
+            [arrayKeys addObject:key];
+        }
+    }];
+
     // Remove all the nulls
     [self removeObjectsForKeys:nullKeys];
     
@@ -94,7 +95,7 @@
     // First, filter out directly stored nulls if required
     if (!ignoringArrays)
     {
-        [self filterUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings)
+        [self filterUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(id  _Nullable evaluatedObject, NSDictionary<NSString *,id> * _Nullable bindings)
         {
             return evaluatedObject != [NSNull null];
         }]];
@@ -103,8 +104,7 @@
     
     NSMutableIndexSet *arrayIndexes = [NSMutableIndexSet indexSet];
     NSMutableIndexSet *dictionaryIndexes = [NSMutableIndexSet indexSet];
-    
-    [self enumerateObjectsUsingBlock:^(id obj,NSUInteger idx, BOOL *stop)
+    [self enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop)
      {
          if ([obj isKindOfClass:[NSDictionary  class]])
          {
@@ -132,3 +132,5 @@
 }
 
 @end
+
+NS_ASSUME_NONNULL_END
